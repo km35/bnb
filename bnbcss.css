@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2019, 4:45:38 PM
+    Author     : kiran
+*/
+html, body {margin:0;padding:0;height:100%; width:100%;}
+body{
+    background-image: url(memphis1.jpg);
+    background-repeat: no-repeat
+}
+main{
+    width: 69%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: rgba(20,20,20,0.5);
+    color: rgb(240, 240, 240);
+    height: 100%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+.head{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    position: fixed;
+    width: 15%;
+    height:15%;
+    margin-top:20%;
+    padding: 0;
+    border: none;
+    
+}
+#name{
+    font-size: 3em;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}
+.headbox{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
