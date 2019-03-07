@@ -10,7 +10,8 @@ and open the template in the editor.
 html, body {margin:0;padding:0;height:100%; width:100%;}
 body{
     background-image: url(memphis1.jpg);
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 main{
     width: 69%;
