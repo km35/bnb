@@ -68,7 +68,7 @@ header{
 #phonenumber{
     display: none;
 }
-@media only all and (max-width: 768px){
+@media (max-width: 768px){
     .nav{
         position:fixed;
         height:4em;
