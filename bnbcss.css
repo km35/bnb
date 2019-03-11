@@ -10,8 +10,10 @@ and open the template in the editor.
 html, body {margin:0;padding:0;height:100%; width:100%;}
 body{
     background-image: url(memphis1.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background: linear-gradient(to bottom, blue, lightblue, blue);
     font-family: "Lucida Sans", Verdana, sans-serif;
 }
 main{
