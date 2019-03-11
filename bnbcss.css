@@ -11,7 +11,7 @@ html, body {margin:0;padding:0;height:100%; width:100%;}
 html{min-height: 100%; position:relative;}
 body{
     background: linear-gradient(to bottom, blue, lightblue, blue);
-    background-image: url(memphis1.jpg);
+    background-image: url(https://km35.github.io/memphis1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
