@@ -12,6 +12,7 @@ body{
     background-image: url(memphis1.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
+    font-family: "Lucida Sans", Verdana, sans-serif;
 }
 main{
     width: 69%;
@@ -22,7 +23,7 @@ main{
     height: 100%;
     padding: 0.5% 0.5% 0.5% 0.5%;
 }
-.head{
+.nav{
     display:flex;
     flex-direction: column;
     background-color: black;
@@ -41,6 +42,16 @@ main{
 a{
     text-decoration: none;
     color: lightblue;
+}
+header{
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    width: 100px;
 }
 .headbox{
     padding-bottom: 5%;
