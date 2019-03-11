@@ -17,7 +17,11 @@ and open the template in the editor.
             <img src="bnb.png" alt="logo" class="logo">
         </header>
             <div class="nav">
+                <!--nav bar, using bullets on desktop cause the requirements say bullets in a list, idk if that means i have to have the bullet points or not but better safe than sorry -->
                 <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
                     <li>
                         <a href="about.html">About Us</a>
                     </li>
@@ -25,15 +29,17 @@ and open the template in the editor.
                         <a href="contact.html">Contact Us</a>
                     </li>
                     <li>
-                        <a href="https://www.memphistravel.com">Sightseeing</a>
+                        <a href="https://www.memphistravel.com" target="blank">Sightseeing</a>
+                        <!--External hyperlink 1-->
                     </li>
                     <li>
-                        <a href="https://memphistn.gov/parks/parks/historical_and_special_parks">Historical Parks</a>
+                        <a href="https://memphistn.gov/parks/parks" target="blank">Parks</a>
+                        <!--External hyperlink 2-->
                     </li>
                 </ul>
             </div>
         <main>
-            <div>
+            <div id="content"></div>
                 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et gravida urna. Pellentesque mollis neque a velit ullamcorper, quis eleifend diam placerat. Nunc et imperdiet lacus. Nulla nec erat suscipit, laoreet leo quis, venenatis purus. Curabitur ut varius ante, vel consequat risus. Sed et lectus eget diam ultricies bibendum at sit amet nunc. Aenean placerat elit a erat pulvinar, sit amet condimentum metus sagittis. Cras id risus eget urna tincidunt aliquam.
 
@@ -44,14 +50,22 @@ Donec gravida varius libero quis egestas. Duis auctor tincidunt odio quis posuer
 Suspendisse interdum massa eros, sed ultrices enim tincidunt sed. Morbi consequat et lorem ut venenatis. Curabitur consectetur fermentum tellus, quis consectetur quam sollicitudin quis. Etiam eget ante in orci tincidunt imperdiet at porta nibh. Mauris nulla nulla, hendrerit in tempor sit amet, rhoncus condimentum nulla. Nunc bibendum bibendum malesuada. Curabitur ultrices sodales libero, non iaculis odio tincidunt sodales. Etiam eu elementum ipsum. Duis ac ante hendrerit, iaculis diam eget, efficitur sapien. Pellentesque ut viverra risus. Phasellus egestas, purus non scelerisque volutpat, nunc turpis dignissim nulla, quis sollicitudin enim ex sit amet mauris. Pellentesque quam nulla, blandit ac sagittis ut, viverra vitae purus. Nam ut mauris id ipsum tristique efficitur nec ut ligula.
 
 Duis hendrerit turpis id metus dignissim ultricies. Sed a ante eget metus pellentesque congue. Phasellus eu feugiat mi, in interdum metus. Sed velit odio, porttitor sed tellus id, placerat pretium felis. Duis pellentesque magna eu lorem tristique aliquam. Integer eget pharetra velit. Aliquam nulla nisl, lacinia sed lacus sed, semper placerat sem.
-            </div>
-            <br>
-            <br>
+            
             <div>
+                <br>
                 <a href="mailto:knm035@gmail.com">contact@cozybnb.com</a>
-                901-888-9999
+                <br>
+                <!--Phone numbers for mobile / desktop-->
+                <span id="desktopnumber">901-888-9999</span>
+                <br>
                 <span id="phonenumber"><a href="tel:+1-901-888-9999">901-888-9999</a></span>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--I don't like putting these here but i can't seem to get padding to work on mobile for this so i have to do this to not hide the bottom behind the nav bar -->
         </main>
+        <footer></footer>
     </body>
 </html>

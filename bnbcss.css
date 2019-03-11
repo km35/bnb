@@ -8,12 +8,14 @@ and open the template in the editor.
     Author     : kiran
 */
 html, body {margin:0;padding:0;height:100%; width:100%;}
+html{min-height: 100%; position:relative;}
 body{
-    background-image: url(memphis1.jpg);
+    background: linear-gradient(to bottom, blue, lightblue, blue); /*if image doesnt load*/
+    background-image: url(memphis1.jpg); /*jpg image*/
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background: linear-gradient(to bottom, blue, lightblue, blue);
     font-family: "Lucida Sans", Verdana, sans-serif;
 }
 main{
@@ -24,6 +26,11 @@ main{
     color: rgb(240, 240, 240);
     height: 100%;
     padding: 0.5% 0.5% 0.5% 0.5%;
+    background-repeat: repeat;
+    position:absolute;
+    top:100px;
+    bottom:0;
+    z-index: -1;
 }
 .nav{
     display:flex;
@@ -45,6 +52,9 @@ a{
     text-decoration: none;
     color: lightblue;
 }
+a:hover{
+    color: darkred;
+}
 header{
     background-color: darkslateblue;
     display: flex;
@@ -55,7 +65,69 @@ header{
     height: 100px;
     width: 100px;
 }
-.headbox{
-    padding-bottom: 5%;
-    padding-top: 5%;
+#phonenumber{
+    display: none;
+}
+@media only all and (max-width: 768px){
+    .nav{
+        position:fixed;
+        height:4em;
+        width:100%;
+        bottom:0;
+    }
+    ul{
+        display:inline-block;
+        list-style-type:none;
+        float: none;
+        text-align: center;
+    }
+    li {
+        display: inline;
+        border-left: 1px solid rgb(240, 240, 240);
+        border-right: 1px solid rgb(240, 240, 240);
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    li:first-of-type{
+        border-left:2px solid rgb(240, 240, 240);
+    }
+    li:last-of-type{
+        border-right:2px solid rgb(240,240,240);
+    }
+    main{
+        background: none;
+        padding-bottom: 10%;
+        margin-bottom: 4.1em;
+        height:100%;
+        bottom: 10%;
+    }
+    /*cellphone links*/
+    #phonenumber{
+        display: inline;
+    }
+    #desktopnumber{
+        display:none;
+    }
+    body{
+        background: linear-gradient(to bottom, blue, lightblue, blue);
+        /*no background image for mobile*/
+    }
+    #content{
+        background-color: rgba(20,20,20,0.5);
+        color: rgb(240, 240, 240);
+        height: 100%;
+        min-height: 100%;
+        position:fixed;
+        width: 70%;
+        left: 15%;
+        right:15%;
+        top:0%;
+        z-index: -1; 
+        /*honestly this is probably a bad way to do it but i can't figure out how to get the background to go the entire page without it*/
+        /*background that scrolls with the page, giving the illusion of a background that goes down the whole page*/
+    }
+    footer{
+        min-height:4em;
+        height:4em;
+    }
 }
